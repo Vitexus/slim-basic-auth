@@ -1,0 +1,23 @@
+Source: php-tuupola-slim-basic-auth
+Section: php
+Priority: optional
+Maintainer: Vítězslav Dvořák <info@vitexsoftware.cz>
+Build-Depends:
+ debhelper-compat (= 13)
+Standards-Version: 4.7.0
+Homepage: https://github.com/tuupola/slim-basic-auth
+Rules-Requires-Root: no
+
+Package: php-tuupola-slim-basic-auth
+Architecture: all
+Multi-Arch: foreign
+Depends:
+ ${misc:Depends},
+ php-psr-http-message,
+ php-psr-http-server-middleware,
+ php-tuupola-callable-handler,
+ php-tuupola-http-factory
+Description: PSR-7 and PSR-15 HTTP Basic Authentication Middleware
+ HTTP Basic Authentication middleware for PSR-7 and PSR-15
+ compatible frameworks. Supports array, PDO, and custom
+ authenticator backends.
